@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="DIGI">
+    <Package name="Medical">
+        <Key ID="STR_DIGI_Medical_setting_gasmask_title">
+            <Original>Accepted gas masks</Original>
+            <German>Akzeptierte Gasmasken</German>
+        </Key>
+        <Key ID="STR_DIGI_Medical_setting_gasmask_desc">
+            <Original>Enter here the classname of the masks that should work with the system.</Original>
+            <German>Hier die classname der Masken eintragen die mit dem System funktionieren sollen.</German>
+        </Key>
+        <Key ID="STR_DIGI_Medical_setting_gasmask_durab_title">
+            <Original>Gas masks durability</Original>
+            <German>Gasmasken Haltbarkeit</German>
+        </Key>
+        <Key ID="STR_DIGI_Medical_setting_gasmask_durab_desc">
+            <Original>Determines how long you can stand in the gas with a gas mask without getting infected.</Original>
+            <German>Bestimmt wie lange man mit einer Gasmaske im Gas stehen kann ohne infiziert zu werden.</German>
+        </Key>
+        <Key ID="STR_DIGI_Medical_setting_infecttime_title">
+            <Original>Time until infection</Original>
+            <German>Zeit bis Infektion</German>
+        </Key>
+        <Key ID="STR_DIGI_Medical_setting_infecttime_desc">
+            <Original>Time you can stand in the gas before you get infected or need a gas mask.</Original>
+            <German>Zeit die man im Gas stehen kann bevor man infiziert wird bzw eine Gasmaske benötigt.</German>
+        </Key>
+        <Key ID="STR_DIGI_Medical_setting_affectAI_title">
+            <Original>Gas Affects AI</Original>
+            <German>Gas betrifft KI</German>
+        </Key>
+        <Key ID="STR_DIGI_Medical_setting_affectAI_desc">
+            <Original>Determines if AI is affected by gas (If you are running this on a local server this can cause perfomance problems)</Original>
+            <German>Betimmt ob KI von Gas betroffen ist(Wenn Sie dies auf einem lokalen Server ausführen, kann dies zu Leistungsproblemen führen)</German>
+        </Key>
+         <Key ID="STR_DIGI_Medical_Intoxikation">
+            <Original>Intoxication</Original>
+            <German>Intoxikation</German>
+        </Key>
+        <Key ID="STR_DIGI_Medical_Radiated">
+            <Original>Radiated</Original>
+            <German>Verstrahlt</German>
+        </Key>
+        <Key ID="STR_DIGI_Medical_sealLeak">
+            <Original>Seal leack</Original>
+            <German>Leck versiegeln</German>
+        </Key>
+        <Key ID="STR_DIGI_Medical_sealantItem">
+            <Original>Sealant tube</Original>
+            <German>Dichtmitteltube</German>
+        </Key>
+        <Key ID="STR_DIGI_Medical_sealantItem_desc">
+            <Original>Sealant which is used to seal objects when e.g. a toxic substance leaks out</Original>
+            <German>Dichtmittel welches zum abdichen von objekten genutzt wird wenn z.b. ein giftstoff austritt</German>
+        </Key>
+        <Key ID="STR_DIGI_Medical_AntidotItem">
+            <Original>Antidot-Autoinjector</Original>
+        </Key>
+        <Key ID="STR_DIGI_Medical_AntidotItem_desc">
+            <Original>Multifunctional antidote that treats many types of poisoning. WARNING: It is not compatible with morphine!</Original>
+            <German>Multifunktionales Gegengift welches viele Arten von Vergiftung behandelt. ACHTUNG: Es verträgt sich schlecht in Verbindung mit Morphium!</German>
+        </Key>
+        <Key ID="STR_DIGI_Medical_AntidotItem_action">
+            <Original>Inject antidote</Original>
+            <German>Antidot injizieren</German>
+        </Key>
+        <Key ID="STR_DIGI_Medical_giveGasMask_action">
+            <Original>Put on gas mask</Original>
+            <German>Gasmaske aufsetzen</German>
+        </Key>
+        <Key ID="STR_DIGI_Medical_giveGasMask_progress">
+            <Original>Put on gas mask...</Original>
+            <German>Setzte gasmaske auf...</German>
+        </Key>
+        <Key ID="STR_DIGI_Medical_AntidotItem_action_progress">
+            <Original>Inject antidote...</Original>
+            <German>Antidot injizieren...</German>
+        </Key>
+        <Key ID="STR_DIGI_Medical_GasModule_Displayname">
+            <Original>Create contaminated area / object</Original>
+            <German>Kontaminierten Bereich / Gegenstand erstellen</German>
+        </Key>
+        <Key ID="STR_DIGI_Medical_GasModule_description">
+            <Original>Raduis around the module which is filled with gas.</Original>
+            <German>Raduis um das Modul welcher mit Gas gefüllt ist.</German>
+        </Key>
+        <Key ID="STR_DIGI_Medical_GasModule_Needbigger">
+            <Original>Minimal Range need to be less than Maximum Range!</Original>
+            <German>Minimal Range muss kleiner als Maximum Range sein!</German>
+        </Key>
+        <Key ID="STR_DIGI_Medical_GasModule_min_radius_dcs">
+            <Original>The Minimal Range describes the area around the module where the gas is most lethal</Original>
+            <German>Der Minimal Rangebeschreibt den bereich um das modul herum in dem das Gas am tötlichsten ist</German>
+        </Key>
+        <Key ID="STR_DIGI_Medical_GasModule_max_radius_dcs">
+            <Original>The Maximum Range is a range around the Minimal Range where the gas is less lethal and you have a longer chance of survival.(distance from module to outer ring)</Original>
+            <German>Der Maximum Rangeist ein bereich um den Minimal Range in dem das Gas weniger tötlich ist und man eine längere überlebens chance hat. (distanz von modul bis äußerer ring)</German>
+        </Key>
+        <Key ID="STR_DIGI_Medical_GasModule_SealLeak">
+            <Original>Seal leak</Original>
+            <German>Leck abdichten</German>
+        </Key>
+        <Key ID="STR_ACE_Mk6Mortar_GASBox_DisplayName">
+            <Original>[ACE] 82mm Gas Rounds Box</Original>
+            <German>[ACE] 82mm Gaspatronenkiste</German>
+        </Key>
+        <Key ID="STR_DIGI_GRENADE_M7A3_DcsShort">
+            <Original>The M7A3 CS gas grenade is a non-lethal tear gas grenade that causes severe burning of the mucous membranes and eyes on contact.</Original>
+            <German>Die M7A3 CS Gas Granate ist eine nicht tödliche Tränen Gas Granate die bei Kontakt starkes Brennen der Schleimhäute und Augen auslöst.</German>
+        </Key>
+        <Key ID="STR_DIGI_Medical_CheckGasMaskDurability">
+            <Original>Check gas mask durability</Original>
+            <German>Haltbarkeit der Gasmaske prüfen</German>
+        </Key>
+        <Key ID="STR_DIGI_Medical_ChangeGasMaskFilter">
+            <Original>Replace gas masks filter</Original>
+            <German>Gasmasken Filter austauschen</German>
+        </Key>
+        <Key ID="STR_DIGI_Medical_GasFilterItem">
+            <Original>Gas mask filter</Original>
+            <German>Gasmaskenfilter</German>
+        </Key>
+        <Key ID="STR_DIGI_Medical_GasFilterItem_desc">
+            <Original></Original>
+            <German></German>
+        </Key>
+    </Package>
+</Project>
