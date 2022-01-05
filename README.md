@@ -4,7 +4,7 @@
 
 With this addon you can conterminate the area as zeus by placing zone modules or with diffrent mortars and gas grenades like the M7A3 CS gas grenade.
 
-##Disclaimer from the Developer
+## Disclaimer from the Developer
 
 - This Git is for Development use, a playable version is availible on Steam (https://steamcommunity.com/sharedfiles/filedetails/?id=2592483726)
 - Feel free to make a Push/Pull request
@@ -12,7 +12,7 @@ With this addon you can conterminate the area as zeus by placing zone modules or
 - Still in development
 
 
-##Features
+## Features
 general:
 - CS gas grenades
 - Diffrent mortar rounds (toxic gas, CS gas, more in progress)
@@ -34,15 +34,15 @@ If you get exposed to the gas for to long without a gas mask you get a new injur
 
 **There is much more and more features are in work**
 
-##Required
+## Required
 - [CBA_A3 v3.15.0 or later](https://steamcommunity.com/sharedfiles/filedetails/?id=450814997)
 - [ACE3 3.13.4 or later](https://steamcommunity.com/sharedfiles/filedetails/?id=463939057)
 
-##Known Issues
+## Known Issues
 - [Issues](https://steamcommunity.com/sharedfiles/filedetails/?id=463939057)
 
-#[Discord](https://discord.gg/rKNJTZUETs)
+# [Discord](https://discord.gg/rKNJTZUETs)
 
-##Special thanks to:
+## Special thanks to:
 [niCe-Team MultiGaming E.V](https://www.nice-team.eu/wp/)
 
