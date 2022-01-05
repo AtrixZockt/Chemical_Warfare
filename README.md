@@ -39,7 +39,7 @@ If you get exposed to the gas for to long without a gas mask you get a new injur
 - [ACE3 3.13.4 or later](https://steamcommunity.com/sharedfiles/filedetails/?id=463939057)
 
 ## Known Issues
-- [Issues](https://steamcommunity.com/sharedfiles/filedetails/?id=463939057)
+- [Issues](https://github.com/AtrixZockt/Chemical_Warfare/issues)
 
 # [Discord](https://discord.gg/rKNJTZUETs)
 
