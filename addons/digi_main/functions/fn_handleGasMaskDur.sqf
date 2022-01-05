@@ -3,7 +3,7 @@
 //[] spawn digi_fnc_handleGasMaskDur;
 /////////////////////
 uiSleep 5;
-waitUntil{!isNil "digi_medical_avail_gasmask" && goggles player in DIGI_AVAIL_GASMASK && player getVariable ["digi_medical_enteredPoisen", false]};
+waitUntil{!isNil "digi_medical_avail_gasmask" && player getVariable ["digi_medical_enteredPoisen", false]};
 
 if(player getVariable ["digi_medical_enteredPoisen", false] && goggles player in DIGI_AVAIL_GASMASK) then {
 	private _timeEntered = CBA_missionTime;
@@ -40,5 +40,8 @@ if(player getVariable ["digi_medical_enteredPoisen", false] && goggles player in
 		};
 
 	},1,[player,_timeEntered,_maxTime,_maxDura,_currentDura]] call CBA_fnc_addPerFrameHandler;
-};
+} else {
+	waitUntil{!player getVariable ["digi_medical_enteredPoisen", false] || goggles player in DIGI_AVAIL_GASMASK};
+	[] spawn digi_fnc_handleGasMaskDur;
+}
 
