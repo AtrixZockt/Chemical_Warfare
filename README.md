@@ -4,6 +4,7 @@
 
 With this addon you can conterminate the area as zeus by placing zone modules or with diffrent mortars and gas grenades like the M7A3 CS gas grenade.
 
+# [Discord](https://discord.gg/rKNJTZUETs)
 ## Disclaimer from the Developer
 
 - This Git is for Development use, a playable version is availible on Steam (https://steamcommunity.com/sharedfiles/filedetails/?id=2592483726)
@@ -40,8 +41,6 @@ If you get exposed to the gas for to long without a gas mask you get a new injur
 
 ## Known Issues
 - [Issues](https://github.com/AtrixZockt/Chemical_Warfare/issues)
-
-# [Discord](https://discord.gg/rKNJTZUETs)
 
 ## Special thanks to:
 [niCe-Team MultiGaming E.V](https://www.nice-team.eu/wp/)
