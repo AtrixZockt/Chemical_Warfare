@@ -124,5 +124,13 @@
             <Original></Original>
             <German></German>
         </Key>
+        <Key ID="STR_DIGI_Explosives_TriWire_Gas_Name">
+            <Original>Tripwire Gas</Original>
+            <German>Stolperdraht-Gas</German>
+        </Key>
+        <Key ID="STR_DIGI_Explosives_TriWire_Gas_Desc">
+            <Original>Type: Tripwire gas - Sprays a poisonous gas when triggered.&lt;br /&gt;Rounds: 1&lt;br /&gt;Used on: Ground</Original>
+            <German>Typ: Stolperdraht-Gas - Versprüht bei Auslösung ein gifitges Gas.&lt;br /&gt;Ladungen: 1&lt;br /&gt;Benutzt auf: Boden</German>
+        </Key>
     </Package>
 </Project>

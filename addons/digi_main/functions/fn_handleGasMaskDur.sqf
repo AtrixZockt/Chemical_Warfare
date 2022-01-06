@@ -41,7 +41,7 @@ if(player getVariable ["digi_medical_enteredPoisen", false] && goggles player in
 
 	},1,[player,_timeEntered,_maxTime,_maxDura,_currentDura]] call CBA_fnc_addPerFrameHandler;
 } else {
-	waitUntil{!player getVariable ["digi_medical_enteredPoisen", false] || goggles player in DIGI_AVAIL_GASMASK};
+	waitUntil{!(player getVariable ["digi_medical_enteredPoisen", false]) || goggles player in DIGI_AVAIL_GASMASK};
 	[] spawn digi_fnc_handleGasMaskDur;
 }
 
