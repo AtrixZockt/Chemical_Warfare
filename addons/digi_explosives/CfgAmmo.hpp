@@ -25,4 +25,59 @@ class CfgAmmo {
         ace_explosives_size = 0;
         smokeColor[] = {0.671, 0.765, 0.184,1};
     };
+
+    class BombCore;
+	//class Bo_GBU12_LGB;
+    class BombCluster_01_Ammo_F;
+    class DIGI_CAS_M43_Ammo: BombCluster_01_Ammo_F {
+        //access = 3;
+		aiAmmoUsageFlags = "64 + 128 + 512";
+		allowAgainstInfantry = 1;
+		autoSeekTarget = 1;
+		canLock=1;
+		cameraViewAvailable = 1;
+		CraterEffects = "BombCrater";
+		CraterWaterEffects = "ImpactEffectsWaterExplosion";
+		cost = 0.1;
+		explosionTime = 2;
+		explosionForceCoef = 5;
+		explosive = 0.95;
+		ExplosionEffects = "BombExplosion"; 
+		flightProfiles[] = {"LoalAltitude"};
+		hit = 0;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		irLock = 0;
+		laserLock = 1;
+		lightColor[] = {1, 0.15, 0, 1};
+		maneuvrability = 16;
+		model = "\A3\Weapons_F\Ammo\Bomb_01_fly_F";
+		nvLock = 1;
+		simulation = "shotMissile";
+		soundFly[] = {"A3\Sounds_F\arsenal\weapons\Launchers\RPG32\Fly_RPG32",1,1,500};
+		weaponLockSystem = 4;
+		weaponType = "Default";
+        triggerDistance = 250;
+        triggerSpeedCoef[] = {0.8,1};
+        submunitionAmmo="DIGI_CAS_M43_Ammo_sub";
+		class CamShakeExplode
+		{
+			power = 20;
+			duration = 2;
+			frequency = 5;
+			distance = 250;
+		};
+
+        
+    };
+    class Mo_cluster_Bomb_01_F;
+    class DIGI_CAS_M43_Ammo_sub: Mo_cluster_Bomb_01_F {
+        hit = 0;
+        indirectHit = 0;
+        indirectHitRange = 0;
+        explosionEffects = "DIGI_GAS_ClusterExplosion"; 
+    };
 }; 
+
+
+
