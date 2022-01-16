@@ -32,7 +32,7 @@ private _hrIncreaseNormal       = GET_ARRAY(_medicationConfig >> "hrIncreaseNorm
 private _hrIncreaseHigh         = GET_ARRAY(_medicationConfig >> "hrIncreaseHigh",getArray (_defaultConfig >> "hrIncreaseHigh"));
 private _incompatibleMedication = GET_ARRAY(_medicationConfig >> "incompatibleMedication",getArray (_defaultConfig >> "incompatibleMedication"));
 
-private _heartRate = GET_HEART_RATE(_patient);
+private _heartRate = _patient getVariable["ace_medical_heartrate",80];
 private _hrIncrease = [_hrIncreaseLow, _hrIncreaseNormal, _hrIncreaseHigh] select (floor ((0 max _heartRate min 110) / 55));
 _hrIncrease params ["_minIncrease", "_maxIncrease"];
 private _heartRateChange = _minIncrease + random (_maxIncrease - _minIncrease);	

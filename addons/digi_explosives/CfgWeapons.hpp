@@ -24,7 +24,7 @@ class CfgWeapons
 		author = "DiGii";
 		canLock = 2;
 		scope=2;
-		displayName = "M32 BZ LGB";
+		displayName = "M43 BZ LGB";
 		maxRange = 5000;
 		maxRangeProbab = 0.8;
 		midRange = 2000;

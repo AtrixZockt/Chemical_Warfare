@@ -26,6 +26,7 @@ if(hasInterface) then {
 	[] spawn digi_fnc_handlePoisenDamage;
 	[] spawn digi_fnc_handleGasMaskDur;
 	[] spawn digi_fnc_chemDetector;
+	[player] spawn digi_fnc_breathing;
 	DIGI_lastpoisend = 0;
 	player addEventHandler ["killed", {call digi_fnc_handleRespawn}];
 	[] spawn {

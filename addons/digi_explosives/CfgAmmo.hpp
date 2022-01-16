@@ -30,7 +30,6 @@ class CfgAmmo {
 	//class Bo_GBU12_LGB;
     class BombCluster_01_Ammo_F;
     class DIGI_CAS_M43_Ammo: BombCluster_01_Ammo_F {
-        //access = 3;
 		aiAmmoUsageFlags = "64 + 128 + 512";
 		allowAgainstInfantry = 1;
 		autoSeekTarget = 1;

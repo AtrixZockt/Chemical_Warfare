@@ -5,7 +5,7 @@ class CfgPatches
     {
         units[] = {
             "DIGI_Gas_TripWireMine"
-		};
+		}; 
         weapons[] = { 
             "DIGI_CAS_M43_Bomb"
 		};
