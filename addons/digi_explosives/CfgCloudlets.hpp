@@ -145,3 +145,18 @@ class DIGI_GAS_ClusterExplosion {
     };
 };
 
+class DIGI_CAS_R_HYDRA_Explosion {
+    class CAS_R_GAS_Effect {
+        simulation = "particles";
+		type = "CAS_GAS_FX";
+        position = "explosionPos";
+        lifeTime = 240;
+		particleFSLoop = 1;
+    };
+    class R_GAS_Script {
+        simulation = "particles";
+		type = "CAS_GAS_Explosion_FX_Script";
+        position = "explosionPos";
+    };
+};
+

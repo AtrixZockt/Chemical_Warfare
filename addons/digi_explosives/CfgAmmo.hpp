@@ -76,6 +76,14 @@ class CfgAmmo {
         indirectHitRange = 0;
         explosionEffects = "DIGI_GAS_ClusterExplosion"; 
     };
+
+    class R_80mm_HE;
+    class DIGI_CAS_R_80mm_GAS_AMMO: R_80mm_HE {
+        hit = 0;
+        indirectHit = 0;
+        indirectHitRange = 0;
+        explosionEffects = "DIGI_CAS_R_HYDRA_Explosion"; //HERocketExplosion
+    };
 }; 
 
 

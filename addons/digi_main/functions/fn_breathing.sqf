@@ -22,7 +22,6 @@ waitUntil {goggles _player in DIGI_AVAIL_GASMASK};
 				private _random = selectRandom["mask_breath_1","mask_breath_2"];
 				_player say3D _random;
 			};
-
 		};
 	},
 	5,

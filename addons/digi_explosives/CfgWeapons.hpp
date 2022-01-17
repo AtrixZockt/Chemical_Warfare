@@ -37,5 +37,11 @@ class CfgWeapons
 		weaponLockSystem = 4;
 	};
 
+	class rockets_Skyfire;
+	class DIGI_CAS_R_80mm_GAS_POD: rockets_Skyfire {
+		displayName = "Hydra GAS 19x";
+		magazines[] = {"DIGI_CAS_R_80mm_GAS_MAG"};
+		scope=2;
+	};
 	
 };
