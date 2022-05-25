@@ -25,15 +25,15 @@ TRACE_1("start",_state);
 
 // Treatment conditions would normally limit full heal to non-unconscious units
 // However, this may be called externally (through Zeus)
-if IN_CRDC_ARRST(_patient) then {
+if (_patient getVariable["ace_medical_inCardiacArrest",false]) then {
     TRACE_1("Exiting cardiac arrest",_patient);
     ["ace_medical_CPRSucceeded", _patient] call CBA_fnc_localEvent;
     _state = [_patient,ace_medical_STATE_MACHINE] call CBA_statemachine_fnc_getCurrentState;
     TRACE_1("after CPRSucceeded",_state);
 };
 
-_patient setVariable [VAR_PAIN, 0, true];
-_patient setVariable [VAR_BLOOD_VOL, DEFAULT_BLOOD_VOLUME, true];
+_patient setVariable ["ace_medical_pain", 0, true];
+_patient setVariable ["ace_medical_bloodVolume", 6.0, true];
 
 // GAS
 _patient setVariable ["digi_medical_enteredPoisen",false,true];
@@ -44,23 +44,23 @@ if (_patient getVariable ["Digi_pain_effect",0] != 0) then {
 	};
 
 // Tourniquets
-_patient setVariable [VAR_TOURNIQUET, DEFAULT_TOURNIQUET_VALUES, true];
+_patient setVariable ["ace_medical_tourniquets", [0,0,0,0,0,0], true];
 _patient setVariable ["ace_medical_treatment_occludedMedications", nil, true];
 
 // Wounds and Injuries
-_patient setVariable [VAR_OPEN_WOUNDS, [], true];
-_patient setVariable [VAR_BANDAGED_WOUNDS, [], true];
-_patient setVariable [VAR_STITCHED_WOUNDS, [], true];
+_patient setVariable ["ace_medical_openWounds", [], true];
+_patient setVariable ["ace_medical_bandagedWounds", [], true];
+_patient setVariable ["ace_medical_stitchedWounds", [], true];
 _patient setVariable ["ace_medical_isLimping", false, true];
-_patient setVariable [VAR_FRACTURES, DEFAULT_FRACTURE_VALUES, true];
+_patient setVariable ["ace_medical_fractures", [0,0,0,0,0,0], true];
 
 // Update wound bleeding
 [_patient] call ace_medical_status_fnc_updateWoundBloodLoss;
 
 // Vitals
-_patient setVariable [VAR_HEART_RATE, DEFAULT_HEART_RATE, true];
-_patient setVariable [VAR_BLOOD_PRESS, [80, 120], true];
-_patient setVariable [VAR_PERIPH_RES, DEFAULT_PERIPH_RES, true];
+_patient setVariable ["ace_medical_heartRate", 80, true];
+_patient setVariable ["ace_medical_bloodPressure", [80, 120], true];
+_patient setVariable ["ace_medical_peripheralResistance", 100, true];
 
 // IVs
 _patient setVariable ["ace_medical_ivBags", nil, true]; 
@@ -69,24 +69,24 @@ _patient setVariable ["ace_medical_ivBags", nil, true];
 _patient setVariable ["ace_medical_bodyPartDamage", [0,0,0,0,0,0], true];
 
 // wakeup needs to be done after achieving stable vitals, but before manually reseting unconc var
-if IS_UNCONSCIOUS(_patient) then {
+if (_patient getVariable ["ACE_isUnconscious", false]) then {
     if (!([_patient] call ace_medical_status_fnc_hasStableVitals)) then { ERROR_2("fullheal [unit %1][state %2] did not restore stable vitals",_patient,_state); };
     TRACE_1("Waking up",_patient);
     ["ace_medical_WakeUp", _patient] call CBA_fnc_localEvent;
     _state = [_patient,ace_medical_STATE_MACHINE] call CBA_statemachine_fnc_getCurrentState;
     TRACE_1("after WakeUp",_state);
-    if IS_UNCONSCIOUS(_patient) then { ERROR_2("fullheal [unit %1][state %2] failed to wake up patient",_patient,_state); };
+    if (_patient getVariable ["ACE_isUnconscious", false]) then { ERROR_2("fullheal [unit %1][state %2] failed to wake up patient",_patient,_state); };
 };
 
 // Generic medical admin
 // _patient setVariable [VAR_CRDC_ARRST, false, true]; // this should be set by statemachine transition
 // _patient setVariable [VAR_UNCON, false, true]; // this should be set by statemachine transition
-_patient setVariable [VAR_HEMORRHAGE, 0, true];
-_patient setVariable [VAR_IN_PAIN, false, true];
-_patient setVariable [VAR_PAIN_SUPP, 0, true];
+_patient setVariable ["ace_medical_hemorrhage", 0, true];
+_patient setVariable ["ace_medical_inPain", false, true];
+_patient setVariable ["ace_medical_painSuppress", 0, true];
 
 // Medication
-_patient setVariable [VAR_MEDICATIONS, [], true];
+_patient setVariable ["ace_medical_medications", [], true];
 
 // Reset triage card since medication is reset
 _patient setVariable ["ace_medical_triageCard", [], true];

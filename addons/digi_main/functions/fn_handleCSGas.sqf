@@ -7,13 +7,13 @@ params ["_logic","_radius"];
 	params["_params","_handler"];
 	_params params["_unit"];
 	if(_unit getVariable["digi_medical_enteredPoisen",false]) then {
-		if (_unit getVariable ["ace_medical_pain", -1] < 0.25) then {_unit setVariable ["ace_medical_pain", 0.25]};
+		if (_unit getVariable ["ace_medical_pain", -1] < 0.25) then {_unit setVariable ["ace_medical_pain", 0.41]};
 		if(goggles _unit in DIGI_AVAIL_GASMASK) then {_unit setVariable["digi_medical_enteredPoisen",false,true]};
 		_unit setVariable ["digi_medical_CS",true,true];
 		_unit say3D "cough_1";
 		private _rndBlur = selectRandom[5,6,7,8];
 		ppBlur ppEffectAdjust [_rndBlur]; 
-		ppBlur ppEffectEnable true; 
+		ppBlur ppEffectEnable true;  
 		ppBlur ppEffectCommit 5;
 	} else {
 		ppBlur ppEffectAdjust [0]; 
